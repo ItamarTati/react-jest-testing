@@ -13,12 +13,12 @@ const App = () => {
     };
 
     return (
-        <div className="container">
+        <div className="container" data-testid="app">
             <h2 className="title">Counter App</h2>
             <div className="counter-container">
-                <button className="button" onClick={increment}>Increment</button>
-                <span className="count">{count}</span>
-                <button className="button" onClick={decrement}>Decrement</button>
+                <button className="button" onClick={increment} data-testid="increment">Increment</button>
+                <span className="count" data-testid="counter" >{count}</span>
+                <button className="button" onClick={decrement} data-testid="decrement">Decrement</button>
             </div>
         </div>
     );
